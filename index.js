@@ -26,3 +26,6 @@ const reducer = (state = initialState, action = {}) => {
 
 // Redux Store
 const store = Redux.createStore(reducer)
+
+// Available Phones
+document.getElementById('count-phones').innerHTML = store.getState().phones
