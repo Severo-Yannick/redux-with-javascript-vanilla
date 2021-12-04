@@ -23,3 +23,6 @@ const reducer = (state = initialState, action = {}) => {
       return state
   }
 }
+
+// Redux Store
+const store = Redux.createStore(reducer)
