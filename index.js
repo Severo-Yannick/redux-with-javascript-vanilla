@@ -34,3 +34,8 @@ document.getElementById('count-phones').innerHTML = store.getState().phones
 document.getElementById('buy-phone').addEventListener('click', () => {
   store.dispatch(buyPhone())
 })
+
+// https://redux.js.org/api/store#subscribelistener
+store.subscribe(() => {
+  document.getElementById('count-phones').innerHTML = store.getState().phones
+})
