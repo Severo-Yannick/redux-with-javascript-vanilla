@@ -29,3 +29,8 @@ const store = Redux.createStore(reducer)
 
 // Available Phones
 document.getElementById('count-phones').innerHTML = store.getState().phones
+
+// Dispatch Action
+document.getElementById('buy-phone').addEventListener('click', () => {
+  store.dispatch(buyPhone())
+})
