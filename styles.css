@@ -1,0 +1,37 @@
+h1 {
+  text-align: center;
+}
+
+.container {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+}
+
+img {
+  margin: 0 auto;
+}
+
+.container p {
+  text-align: center;
+}
+
+button {
+  border: 1px solid gray;
+  background: gray;
+  border-radius: 5px;
+  padding: 10px;
+  color: rgb(252, 247, 247);
+  text-transform: uppercase;
+  cursor: pointer;
+  flex-grow: 1;
+}
+
+button:hover {
+  border: 1px solid lightgray;
+  background: lightgray;
+  color: black;
+}
